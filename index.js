@@ -9,8 +9,15 @@ const dates = [
 
 // TODO: Buatlah fungsi createDate
 const createDate = function(paramDate, paramArray){
-  tanggalEpoch = Date.parse(paramDate[paramArray]);
-  return tanggalEpoch;
+  tanggalEpoch = Date.parse(paramDate[paramArray])/1000;
+  if(isNaN(tanggalEpoch)){
+    arrayTemp = [];
+    for(iterator = 0; iterator < paramDate.length; iterator++){
+      arrayTemp.push(Date.parse(paramDate[i])/1000);
+    }
+    tanggalEpoch = arrayTemp.join('-')
+  }
+  return tanggalEpoch.toString();
 };
 
 // ! JANGAN DIMODIFIKASI
