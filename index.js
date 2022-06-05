@@ -15,6 +15,7 @@ const createDate = function(paramDate, paramArray){
     for(iterator = 0; iterator < paramDate.length; iterator++){
       arrayTemp.push(Date.parse(paramDate[iterator])/1000);
     }
+    arrayTemp.sort()
     tanggalEpoch = arrayTemp.join('-')
   }
   return tanggalEpoch.toString();
