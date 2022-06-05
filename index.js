@@ -13,7 +13,7 @@ const createDate = function(paramDate, paramArray){
   if(isNaN(tanggalEpoch)){
     arrayTemp = [];
     for(iterator = 0; iterator < paramDate.length; iterator++){
-      arrayTemp.push(Date.parse(paramDate[i])/1000);
+      arrayTemp.push(Date.parse(paramDate[iterator])/1000);
     }
     tanggalEpoch = arrayTemp.join('-')
   }
