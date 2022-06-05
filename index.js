@@ -8,7 +8,10 @@ const dates = [
 ];
 
 // TODO: Buatlah fungsi createDate
-const createDate = null;
+const createDate = function(paramDate, paramArray){
+  tanggalEpoch = Date.parse(paramDate[paramArray]);
+  return tanggalEpoch;
+};
 
 // ! JANGAN DIMODIFIKASI
 (() => {
